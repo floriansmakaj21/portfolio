@@ -1,0 +1,186 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Noto Sans', sans-serif; */
+/* Constant Stylings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+/* Constant Stylings */
+
+/* NAV Styling */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 12vh;
+  background-color: #444140;
+  overflow: hidden;
+}
+.logo {
+  color: rgb(240, 240, 241);
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+}
+nav ul {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(240, 240, 241);
+}
+.toogle {
+  color: white;
+  font-size: 1.5rem;
+}
+/* End of Nav */
+
+/* Cover Section Styling */
+.cover {
+  height: 92vh;
+  min-height: 92vh;
+  background: linear-gradient(rgba(126, 128, 127, 0.2), rgba(2, 21, 83, 0.8)),
+    url("https://images.pexels.com/photos/2632059/pexels-photo-2632059.jpeg?cs=srgb&dl=arachnid-close-up-cobweb-2632059.jpg&fm=jpg");
+  background-size: cover;
+  /* background-position: center; */
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 3px;
+}
+/* End of Sections */
+.header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 1.8rem;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vw;
+}
+.project1,
+.project2,
+.project3 {
+  width: 30%;
+  overflow: hidden;
+}
+.projects img {
+  height: 250px;
+}
+/* Projects */
+/* Contact */
+.contact-me {
+  background: rgb(98, 67, 170);
+  background: -webkit-linear-gradient(
+    top left,
+    rgba(229, 217, 198, 1),
+    rgba(7, 49, 25, 1)
+  );
+  background: -moz-linear-gradient(
+    top left,
+    rgba(229, 217, 198, 1),
+    rgba(7, 49, 25, 1)
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgb(151, 8, 240),
+    rgba(4, 67, 139, 1)
+  );
+  background-size: cover;
+  color: white;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 3vh;
+}
+form ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid grey;
+  margin-top: 3px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: rgb(45, 90, 214);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 25%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #444140;
+  color: white;
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (max-width: 480px) {
+  /* styles */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-items li {
+    padding-left: 10px;
+  }
+  .cover {
+    /* height: 30vh; */
+  }
+  .cover-slogan {
+    font-size: 1rem;
+  }
+  .header-text,
+  .cover-main-text {
+    font-size: 1.2em;
+  }
+  .cover-main-text {
+    /* height: 10vh; */
+    text-align: center;
+  }
+  .projects h3 {
+    text-align: center;
+  }
+  .projects p {
+    display: none;
+  }
+  .map {
+    display: none;
+  }
+}
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (max-width: 768px) {
+  /* styles */
+  .nav-items {
+    padding-left: 20px;
+  }
+  .map {
+    display: none;
+  }
+}
